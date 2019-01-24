@@ -1,4 +1,4 @@
 # apollo-react-testing
 Use jest, enzyme for testing
 
-Task: Refactoring Post component and make test
+Task: Refactoring Post component and make test. Then make a pull request
