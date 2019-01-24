@@ -1,0 +1,592 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render users list 1`] = `
+<MockedProvider
+  addTypename={false}
+  mocks={
+    Array [
+      Object {
+        "request": Object {
+          "query": Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "createPost",
+                },
+                "operation": "mutation",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "text",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "text",
+                            },
+                          },
+                        },
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "title",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "title",
+                            },
+                          },
+                        },
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "userId",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "userId",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "createPost",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "id",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "String",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "text",
+                      },
+                    },
+                  },
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "String",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "title",
+                      },
+                    },
+                  },
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ID",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "userId",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 152,
+              "start": 0,
+            },
+          },
+          "variables": Object {
+            "text": "1",
+            "title": "1",
+            "userId": "1",
+          },
+        },
+        "result": Object {
+          "data": Object {
+            "createPost": Object {
+              "id": "1",
+            },
+          },
+        },
+      },
+    ]
+  }
+>
+  <ApolloProvider
+    client={
+      ApolloClient {
+        "__operations_cache__": Map {},
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {
+              "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                "id": "1",
+              },
+              "ROOT_MUTATION": Object {
+                "createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                  "generated": true,
+                  "id": "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})",
+                  "type": "id",
+                  "typename": undefined,
+                },
+              },
+            },
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimistic": Array [],
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "clientAwareness": Object {},
+        "defaultOptions": Object {},
+        "disableNetworkFetches": false,
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "mutate": [Function],
+        "query": [Function],
+        "queryDeduplication": true,
+        "queryManager": QueryManager {
+          "clientAwareness": Object {},
+          "dataStore": DataStore {
+            "cache": InMemoryCache {
+              "addTypename": false,
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "config": Object {
+                "addTypename": false,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {
+                  "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                    "id": "1",
+                  },
+                  "ROOT_MUTATION": Object {
+                    "createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                      "generated": true,
+                      "id": "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})",
+                      "type": "id",
+                      "typename": undefined,
+                    },
+                  },
+                },
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimistic": Array [],
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "cacheKeyRoot": CacheKeyNode {
+                  "children": null,
+                  "key": null,
+                },
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "keyMaker": QueryKeyMaker {
+                  "cacheKeyRoot": CacheKeyNode {
+                    "children": null,
+                    "key": null,
+                  },
+                  "perQueryKeyMakers": Map {},
+                },
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+          },
+          "deduplicator": ApolloLink {
+            "request": [Function],
+          },
+          "fetchQueryPromises": Map {},
+          "idCounter": 2,
+          "link": ApolloLink {
+            "request": [Function],
+          },
+          "mutationStore": MutationStore {
+            "store": Object {
+              "1": Object {
+                "error": null,
+                "loading": false,
+                "mutationString": "mutation createPost($text: String!, $title: String!, $userId: ID!) {
+  createPost(text: $text, title: $title, userId: $userId) {
+    id
+  }
+}
+",
+                "variables": Object {
+                  "text": "1",
+                  "title": "1",
+                  "userId": "1",
+                },
+              },
+            },
+          },
+          "onBroadcast": [Function],
+          "queries": Map {
+            "1" => Object {
+              "document": undefined,
+              "invalidated": false,
+              "lastRequestId": null,
+              "listeners": Array [],
+              "newData": null,
+              "observableQuery": null,
+              "subscriptions": Array [],
+            },
+          },
+          "queryDeduplication": true,
+          "queryIdsByName": Object {},
+          "queryStore": QueryStore {
+            "store": Object {},
+          },
+          "scheduler": QueryScheduler {
+            "inFlightQueries": Object {},
+            "intervalQueries": Object {},
+            "pollingTimers": Object {},
+            "queryManager": [Circular],
+            "registeredQueries": Object {},
+            "ssrMode": false,
+          },
+        },
+        "reFetchObservableQueries": [Function],
+        "resetStore": [Function],
+        "resetStoreCallbacks": Array [],
+        "ssrMode": false,
+        "store": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": false,
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "config": Object {
+              "addTypename": false,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {
+                "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                  "id": "1",
+                },
+                "ROOT_MUTATION": Object {
+                  "createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})": Object {
+                    "generated": true,
+                    "id": "$ROOT_MUTATION.createPost({\\"text\\":\\"1\\",\\"title\\":\\"1\\",\\"userId\\":\\"1\\"})",
+                    "type": "id",
+                    "typename": undefined,
+                  },
+                },
+              },
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimistic": Array [],
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "keyMaker": QueryKeyMaker {
+                "cacheKeyRoot": CacheKeyNode {
+                  "children": null,
+                  "key": null,
+                },
+                "perQueryKeyMakers": Map {},
+              },
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "version": "2.4.8",
+        "watchQuery": [Function],
+      }
+    }
+  >
+    <NewPost
+      match={
+        Object {
+          "params": Object {
+            "userId": "1",
+          },
+        }
+      }
+    >
+      <Mutation
+        mutation={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "createPost",
+                },
+                "operation": "mutation",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "text",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "text",
+                            },
+                          },
+                        },
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "title",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "title",
+                            },
+                          },
+                        },
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "userId",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "userId",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "createPost",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "id",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "String",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "text",
+                      },
+                    },
+                  },
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "String",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "title",
+                      },
+                    },
+                  },
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "ID",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "userId",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 152,
+              "start": 0,
+            },
+          }
+        }
+      >
+        <p>
+          Loading...
+        </p>
+      </Mutation>
+    </NewPost>
+  </ApolloProvider>
+</MockedProvider>
+`;
